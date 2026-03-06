@@ -1,0 +1,10 @@
+clc; clear; close all;
+x = [1 3 2 1];
+y = [1 1 3 1];
+x_new = x;
+y_new = -y;
+plot(x, y, 'b', 'LineWidth', 2); hold on;
+plot(x_new, y_new, 'r', 'LineWidth', 2);
+legend('Original', 'Reflected');
+title('Reflection about X-axis');
+grid on; axis equal;

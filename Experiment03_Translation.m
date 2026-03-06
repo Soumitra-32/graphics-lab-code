@@ -1,0 +1,11 @@
+clc; clear; close all;
+x = [1 3 2 1];
+y = [1 1 3 1];
+tx = 3; ty = 2;
+x_new = x + tx;
+y_new = y + ty;
+plot(x, y, 'b', 'LineWidth', 2); hold on;
+plot(x_new, y_new, 'r', 'LineWidth', 2);
+legend('Original', 'Translated');
+title('Translation');
+grid on; axis equal;

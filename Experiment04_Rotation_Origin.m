@@ -1,0 +1,11 @@
+clc; clear; close all;
+x = [1 3 2 1];
+y = [1 1 3 1];
+theta = deg2rad(45);
+x_new = x*cos(theta) - y*sin(theta);
+y_new = x*sin(theta) + y*cos(theta);
+plot(x, y, 'b', 'LineWidth', 2); hold on;
+plot(x_new, y_new, 'r', 'LineWidth', 2);
+legend('Original', 'Rotated');
+title('Rotation about Origin');
+grid on; axis equal;

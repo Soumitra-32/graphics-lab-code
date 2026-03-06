@@ -1,0 +1,11 @@
+clc; clear; close all;
+x = [1 3 2 1];
+y = [1 1 3 1];
+sx = 2; sy = 2;
+x_new = sx * x;
+y_new = sy * y;
+plot(x, y, 'b', 'LineWidth', 2); hold on;
+plot(x_new, y_new, 'r', 'LineWidth', 2);
+legend('Original', 'Scaled');
+title('Scaling with Respect to Origin');
+grid on; axis equal;
